@@ -20,7 +20,7 @@ const ProjectCard = ({
       </div>
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">{name}</h3>
-        <p className="text-gray-600 dark:text-gray-400 mb-4">{description}</p>
+        <p className="text-gray-600 dark:text-gray-400 mb-4 min-h-[60px]">{description}</p>
         <div className="flex space-x-4">
           <a href={githubUrl} className="font-medium hover:underline">
             GitHub

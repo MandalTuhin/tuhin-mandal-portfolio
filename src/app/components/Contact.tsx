@@ -1,3 +1,5 @@
+import {FaGithub, FaEnvelope, FaLinkedin} from "react-icons/fa";
+
 // app/components/Contact.tsx
 const Contact = () => {
   return (
@@ -11,12 +13,15 @@ const Contact = () => {
           href="mailto:tuhin@example.com"
           className="font-medium hover:underline"
         >
+        <FaEnvelope className="inline mr-2" />
           Email: mandaltuhin7@gmail.com
         </a>
         <a href="https://github.com/MandalTuhin/" className="font-medium hover:underline">
+         <FaGithub className="inline mr-2" />
           GitHub
         </a>
         <a href="https://www.linkedin.com/in/tuhin-mandal-2157102aa/" className="font-medium hover:underline">
+          <FaLinkedin className="inline mr-2" />
           LinkedIn
         </a>
       </div>
