@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* 1. Tell Tailwind to watch for `.dark` on any ancestor */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 2. (Optional) Your @config block if you need other settings */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
