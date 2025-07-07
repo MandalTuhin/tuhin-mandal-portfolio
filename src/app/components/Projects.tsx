@@ -3,20 +3,20 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
-    name: "Project One",
-    description: "A brief description...",
+    name: "Kitabein",
+    description: "Share and borrow books near you.",
     githubUrl: "#",
     liveUrl: "#",
   },
   {
-    name: "Project Two",
-    description: "A brief description...",
+    name: "PlantShare",
+    description: "A platform for sharing your garden to the world.",
     githubUrl: "#",
     liveUrl: "#",
   },
   {
-    name: "Project Three",
-    description: "A brief description...",
+    name: "Where is my Bus?",
+    description: "A real-time bus tracking application.",
     githubUrl: "#",
     liveUrl: "#",
   },
