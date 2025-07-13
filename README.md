@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tuhin Mandal Portfolio
 
-## Getting Started
+Welcome to my personal portfolio website! This project showcases my work, skills, and experience as a developer. Built using **Next.js**, it demonstrates my proficiency in modern web development, interactive design, and creative problem-solving.
 
-First, run the development server:
+## 🚀 About Me
+
+I'm Tuhin Mandal, a passionate developer focused on building engaging and performant web applications. This portfolio is a reflection of my journey, highlighting selected projects, technical expertise, and the impact I've made through my work.
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js
+- **Languages:** TypeScript, HTML, CSS
+- **Styling:** Tailwind CSS
+- **Deployment:** Vercel
+
+## ✨ Features
+
+- Responsive design for all devices
+- Dynamic project showcase
+- About Me section with skills and experience
+- SEO optimized and fast loading
+
+## 📂 Structure
+
+- `/src` – Contains all route-based components
+- `/components` – Reusable UI elements
+- `/public` – Static assets
+
+## 🖥️ Projects
+
+Explore a selection of my best work, with live demos and source code links for each project. (Update this section with your project details.)
+
+## 📬 Contact
+
+Interested in working together or learning more?  
+Feel free to reach out via the contact form or email me at [mandaltuhin7@gmail.com].
+
+## 📝 Getting Started
+
+To run this portfolio locally:
 
 ```bash
+git clone https://github.com/MandalTuhin/tuhin-mandal-portfolio.git
+cd tuhin-mandal-portfolio
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📄 License
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project is open-source and available under the [MIT License](LICENSE).
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+Thank you for visiting my portfolio!  
+Let’s connect and create something amazing together.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📢 Follow Me
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [LinkedIn](https://www.linkedin.com/in/tuhin-mandal-2157102aa/)
