@@ -72,7 +72,7 @@ Includes:
   - [Live demo](https://product-card-demo-tm.netlify.app/)
 - [QR code component](https://www.frontendmentor.io/solutions/mobile-first-solution-using-flexbox-S_sgclQLd1)
   - [Github repo](https://github.com/MandalTuhin/qr-code-component-main)
-  - [Live demo](https://qr-code-component-main.vercel.app/)
+  - [Live demo](https://mandaltuhin.github.io/qr-code-component-main/)
 
 ---
 
