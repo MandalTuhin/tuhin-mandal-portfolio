@@ -1,43 +1,90 @@
-# Tuhin Mandal Portfolio
+# Tuhin Mandal — Developer Portfolio
 
-Welcome to my personal portfolio website! This project showcases my work, skills, and experience as a developer. Built using **Next.js**, it demonstrates my proficiency in modern web development, interactive design, and creative problem-solving.
+Welcome to my personal portfolio website! This project is built using **Next.js** and **Tailwind CSS**, showcasing my skills in responsive UI development, clean code architecture, and design thinking.
+
+---
 
 ## 🚀 About Me
 
-I'm Tuhin Mandal, a passionate developer focused on building engaging and performant web applications. This portfolio is a reflection of my journey, highlighting selected projects, technical expertise, and the impact I've made through my work.
+I'm **Tuhin Mandal**, a self-driven developer with a passion for building elegant and performant web interfaces.  
+This portfolio reflects both my technical learning and personal growth journey — especially my commitment to discipline, recovery, and focused development.
+
+---
 
 ## 🛠️ Tech Stack
 
-- **Framework:** Next.js
-- **Languages:** TypeScript, HTML, CSS
+- **Framework:** Next.js (App Router)
+- **Languages:** TypeScript, JavaScript, HTML, CSS
 - **Styling:** Tailwind CSS
+- **Icons:** Lucide React
 - **Deployment:** Vercel
+
+---
 
 ## ✨ Features
 
-- Responsive design for all devices
-- Dynamic project showcase
-- About Me section with skills and experience
-- SEO optimized and fast loading
+- Clean, minimal and responsive layout
+- Light/Dark mode toggle
+- Dynamic project showcase section
+- Built for speed and accessibility
 
-## 📂 Structure
+---
 
-- `/src` – Contains all route-based components
-- `/components` – Reusable UI elements
-- `/public` – Static assets
+## 🖼️ Preview
 
-## 🖥️ Projects
+### 🌞 Light Mode
 
-Explore a selection of my best work, with live demos and source code links for each project. (Update this section with your project details.)
+![Light Screenshot](./public/screenshot-light.png)
+
+### 🌙 Dark Mode
+
+![Dark Screenshot](./public/screenshot-dark.png)
+
+---
+
+## 📂 Folder Structure
+
+```plaintext
+├── public/ → Static assets (images, icons, favicon)
+├── src/
+│ ├── app/ → Pages and routes
+│ ├── components/ → Reusable UI components
+│ └── styles/ → Tailwind config (globals.css)
+```
+
+---
+
+## 🧩 Projects
+
+### 🔐 [Modern Login Page Mock](https://modern-login-mock.vercel.app/)
+
+A clean and responsive login page mockup built using Tailwind CSS and React.
+
+- [GitHub Repo](https://github.com/MandalTuhin/modern-login-mock)
+
+### 📱 [Frontend Mentor Projects](https://github.com/MandalTuhin)
+
+Completed challenges from Frontend Mentor to sharpen UI/UX and responsive design skills.  
+Includes:
+
+- [Product preview card component](https://www.frontendmentor.io/solutions/product-preview-card-component-solution-using-mobile-first-workflow-ES2taARNL7)
+  - [Github repo](https://github.com/MandalTuhin/product-preview-card-component)
+  - [Live demo](https://product-card-demo-tm.netlify.app/)
+- [QR code component](https://www.frontendmentor.io/solutions/mobile-first-solution-using-flexbox-S_sgclQLd1)
+  - [Github repo](https://github.com/MandalTuhin/qr-code-component-main)
+  - [Live demo](https://qr-code-component-main.vercel.app/)
+
+---
 
 ## 📬 Contact
 
-Interested in working together or learning more?  
-Feel free to reach out via the contact form or email me at [mandaltuhin7@gmail.com].
+📧 Email: [mandaltuhin7@gmail.com](mailto:mandaltuhin7@gmail.com)  
+🔗 LinkedIn: [linkedin.com/in/tuhin-mandal-2157102aa](https://www.linkedin.com/in/tuhin-mandal-2157102aa)  
+🐙 GitHub: [github.com/MandalTuhin](https://github.com/MandalTuhin)
 
-## 📝 Getting Started
+---
 
-To run this portfolio locally:
+## 📝 Getting Started (for local setup)
 
 ```bash
 git clone https://github.com/MandalTuhin/tuhin-mandal-portfolio.git
@@ -46,17 +93,15 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser to view the site.
-
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE).
+Open your browser and navigate to `http://localhost:3000` to view the portfolio.
 
 ---
 
-Thank you for visiting my portfolio!  
-Let’s connect and create something amazing together.
+## 📄 License
 
-## 📢 Follow Me
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
 
-- [LinkedIn](https://www.linkedin.com/in/tuhin-mandal-2157102aa/)
+---
+
+Thank you for visiting my portfolio!
+Let’s build something impactful together. 🌱
