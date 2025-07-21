@@ -2,6 +2,7 @@
 "use client";
 
 import ThemeToggle from "./ThemeToggle";
+import { FaDownload } from "react-icons/fa";
 import { useActiveSection } from "../hooks/useActiveSection";
 
 const navLinks = [
@@ -15,12 +16,17 @@ const Navbar = () => {
   const activeSection = useActiveSection(navLinks.map((link) => link.id));
 
   return (
+    // The header is full-width, fixed, and has a blurred background and a subtle bottom border for separation.
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm">
-      <nav className="container mx-auto flex max-w-4xl items-center justify-between px-4 py-4">
+      {/* The nav is a flex container that holds the three main parts of the navbar. It's set to relative for positioning the centered links. */}
+      <nav className="container relative mx-auto flex max-w-4xl items-center justify-between px-4 py-4 border-b border-gray-200/50  dark:border-gray-700/50">
+        {/* Left Aligned: Logo/Name */}
         <div className="font-bold text-xl text-gray-900 dark:text-gray-100">
           Tuhin
         </div>
-        <div className="hidden items-center space-x-8 text-gray-600 dark:text-gray-300 md:flex">
+
+        {/* Centered Navigation Links: Absolutely positioned to ensure perfect centering regardless of the width of the side elements. */}
+        <div className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center space-x-8 text-gray-600 dark:text-gray-300 md:flex">
           {navLinks.map((link) => (
             <a
               key={link.id}
@@ -38,7 +44,19 @@ const Navbar = () => {
             </a>
           ))}
         </div>
-        <ThemeToggle />
+
+        {/* Right Aligned: Actions (Resume Download, Theme Toggle) */}
+        <div className="flex items-center gap-4">
+          <a
+            href="/Tuhin_Mandal_Resume.pdf"
+            download
+            className="hidden items-center gap-2 rounded-md border border-gray-300 px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:border-pink-500 hover:text-pink-600 dark:border-gray-600 dark:text-gray-300 dark:hover:border-pink-500 dark:hover:text-pink-500 md:flex"
+          >
+            <FaDownload />
+            <span>Resume</span>
+          </a>
+          <ThemeToggle />
+        </div>
       </nav>
     </header>
   );
