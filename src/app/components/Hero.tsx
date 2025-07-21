@@ -6,10 +6,10 @@ const Hero = () => {
         Hi, I&apos;m Tuhin.
       </h1>
       <h2 className="text-4xl md:text-5xl font-light text-gray-800 dark:text-gray-200 mb-6">
-        A developer who builds things that work and feel right.
+        A backend developer who builds robust and scalable systems.
       </h2>
       <p className="text-lg text-gray-500 dark:text-gray-400 mb-8">
-        Focused on clarity, accessibility, and real impact.
+        Focused on writing clean, efficient, and secure code.
       </p>
       <a
         href="#projects"

@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tuhin Mandal – Full-Stack Developer",
+  title: "Tuhin Mandal – Backend Developer",
   description:
     "Personal portfolio site showcasing projects, skills and contact details.",
 };
