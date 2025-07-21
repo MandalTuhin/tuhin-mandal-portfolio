@@ -10,7 +10,7 @@ const Contact = () => {
       </p>
       <div className="flex flex-col space-y-2 text-gray-700 dark:text-gray-200">
         <a
-          href="mailto:tuhin@example.com"
+          href="mailto:mandaltuhin7@gmail.com"
           className="font-medium hover:underline"
         >
         <FaEnvelope className="inline mr-2" />
