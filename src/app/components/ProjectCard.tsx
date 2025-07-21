@@ -18,7 +18,7 @@ const ProjectCard = ({
   image,
 }: ProjectCardProps) => {
   return (
-    <div className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm bg-white dark:bg-gray-900 hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
+    <div className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden bg-white dark:bg-gray-900 shadow-sm shadow-black/5 hover:shadow-lg dark:shadow-white/5 dark:hover:shadow-white/10 hover:-translate-y-1 transition-all duration-300">
       <div className="bg-gray-200 dark:bg-gray-800 h-48 flex items-center justify-center">
         {image ? (
           image
