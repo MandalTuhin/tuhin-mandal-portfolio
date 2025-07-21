@@ -1,25 +1,15 @@
 // app/components/Projects.tsx
 import ProjectCard from "./ProjectCard";
+import { FaServer } from "react-icons/fa";
 
 const projects = [
   {
     name: "KPA-api",
-    description: " Backend API for the KPA Forms assignment, built with Node.js, Express, and PostgreSQL. Features robust validation, a clean architecture, and production-ready best practices.",
+    description: "A backend API for submitting and retrieving form data securely.",
     githubUrl: "https://github.com/MandalTuhin/KPA-api",
     liveUrl: "#",
-  },
-  {
-    name: "PlantShare",
-    description: "A platform for sharing your garden to the world.",
-    githubUrl: "#",
-    liveUrl: "#",
-  },
-  {
-    name: "Where is my Bus?",
-    description: "A real-time bus tracking application.",
-    githubUrl: "#",
-    liveUrl: "#",
-  },
+    image: <FaServer size={64} className="text-gray-400 dark:text-gray-500" />,
+  }
 ];
 
 const Projects = () => {

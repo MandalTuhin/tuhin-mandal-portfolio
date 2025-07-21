@@ -1,9 +1,12 @@
 // app/components/ProjectCard.tsx
+import { ReactNode } from "react";
+
 interface ProjectCardProps {
   name: string;
   description: string;
   githubUrl: string;
   liveUrl: string;
+  image?: ReactNode;
 }
 
 const ProjectCard = ({
@@ -11,12 +14,16 @@ const ProjectCard = ({
   description,
   githubUrl,
   liveUrl,
+  image,
 }: ProjectCardProps) => {
   return (
     <div className="border border-gray-200 dark:border-gray-700 rounded-lg overflow-hidden shadow-sm bg-white dark:bg-gray-900 hover:border-pink-500 dark:hover:border-pink-600 transition-all">
       <div className="bg-gray-200 dark:bg-gray-800 h-48 flex items-center justify-center">
-        {/* Placeholder for project image */}
-        <span className="text-gray-400 dark:text-gray-500">Image</span>
+        {image ? (
+          image
+        ) : (
+          <span className="text-gray-400 dark:text-gray-500">Image</span>
+        )}
       </div>
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-gray-100">{name}</h3>
