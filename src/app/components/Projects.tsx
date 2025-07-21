@@ -3,9 +3,9 @@ import ProjectCard from "./ProjectCard";
 
 const projects = [
   {
-    name: "Kitabein",
-    description: "Share and borrow books near you.",
-    githubUrl: "#",
+    name: "KPA-api",
+    description: " Backend API for the KPA Forms assignment, built with Node.js, Express, and PostgreSQL. Features robust validation, a clean architecture, and production-ready best practices.",
+    githubUrl: "https://github.com/MandalTuhin/KPA-api",
     liveUrl: "#",
   },
   {

@@ -25,9 +25,11 @@ const ProjectCard = ({
           <a href={githubUrl} className="font-medium hover:underline">
             GitHub
           </a>
-          <a href={liveUrl} className="font-medium hover:underline">
-            Live Demo
-          </a>
+          {liveUrl !== "#" && (
+            <a href={liveUrl} className="font-medium hover:underline">
+              Live Demo
+            </a>
+          )}
         </div>
       </div>
     </div>
