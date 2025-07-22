@@ -14,11 +14,6 @@ export const contentType = "image/png";
 
 // Image generation
 export default async function Image() {
-  // Font
-  const geistBold = fetch(
-    new URL("../../../public/fonts/Geist-Bold.otf", import.meta.url)
-  ).then((res) => res.arrayBuffer());
-
   return new ImageResponse(
     (
       // ImageResponse JSX element
@@ -33,7 +28,6 @@ export default async function Image() {
           alignItems: "center",
           justifyContent: "center",
           color: "white",
-          fontFamily: '"Geist"',
         }}
       >
         <div style={{ fontSize: 84, fontWeight: "bold" }}>Tuhin Mandal</div>
@@ -55,9 +49,6 @@ export default async function Image() {
     // ImageResponse options
     {
       ...size,
-      fonts: [
-        { name: "Geist", data: await geistBold, style: "normal", weight: 700 },
-      ],
     }
   );
 }
