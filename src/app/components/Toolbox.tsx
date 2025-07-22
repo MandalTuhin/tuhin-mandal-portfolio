@@ -35,7 +35,7 @@ const Toolbox = () => {
             className="flex flex-col items-center justify-center p-4 w-32 h-32 
                        border border-gray-200 dark:border-gray-700 
                        rounded-lg shadow-sm bg-white dark:bg-gray-800 
-                       hover:shadow-md hover:scale-105 transition-all"
+                       hover:shadow-md hover:scale-105 dark:hover:shadow-white/10 transition-all"
           >
             <div className="text-gray-600 dark:text-gray-300 mb-2">
               {tool.icon}
