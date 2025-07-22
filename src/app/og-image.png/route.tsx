@@ -5,10 +5,6 @@ export const runtime = "edge";
 
 // Image metadata
 export const alt = "Tuhin Mandal - Backend Developer";
-export const size = {
-  width: 1200,
-  height: 630,
-};
 
 export const contentType = "image/png";
 
@@ -48,7 +44,8 @@ export async function GET() {
     ),
     // ImageResponse options
     {
-      ...size,
+      width: 1200,
+      height: 630,
     }
   );
 }
