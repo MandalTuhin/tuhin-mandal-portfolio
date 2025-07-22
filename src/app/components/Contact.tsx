@@ -1,5 +1,6 @@
 import { FaGithub, FaEnvelope, FaLinkedin } from "react-icons/fa";
 import ContactForm from "./ContactForm";
+import CopyableLink from "./CopyableLink";
 
 // app/components/Contact.tsx
 const Contact = () => {
@@ -16,13 +17,13 @@ const Contact = () => {
         <div>
           <h3 className="text-2xl font-semibold mb-4">Get in Touch</h3>
           <div className="flex flex-col space-y-4 text-gray-700 dark:text-gray-300">
-            <a
+            <CopyableLink
               href="mailto:mandaltuhin7@gmail.com"
-              className="font-medium hover:text-pink-600 dark:hover:text-pink-500 transition-colors flex items-center gap-3"
+              copyText="mandaltuhin7@gmail.com"
             >
               <FaEnvelope size={20} />
               <span>mandaltuhin7@gmail.com</span>
-            </a>
+            </CopyableLink>
             <a
               href="https://github.com/MandalTuhin/"
               className="font-medium hover:text-pink-600 dark:hover:text-pink-500 transition-colors flex items-center gap-3"

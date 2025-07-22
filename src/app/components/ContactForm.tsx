@@ -2,13 +2,14 @@
 
 import { useActionState } from "react";
 import { useFormStatus } from "react-dom";
-import { sendEmail, type FormState } from "../actions";
+import { sendEmail, type FormState } from "@/app/actions";
 
 const inputClasses =
   "w-full rounded-md border border-gray-300 bg-white p-3 text-sm text-gray-800 shadow-sm dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200";
 
 const initialState: FormState = {
   message: "",
+  success: false,
 };
 
 function SubmitButton() {
@@ -73,7 +74,11 @@ export default function ContactForm() {
         {state.errors?.message && <p className="mt-1 text-sm text-red-500">{state.errors.message[0]}</p>}
       </div>
       <SubmitButton />
-      {state.message && <p className={`mt-2 text-sm ${state.errors ? 'text-red-500' : 'text-green-500'}`}>{state.message}</p>}
+      {state.message && (
+        <p className={`mt-2 text-sm ${!state.success ? "text-red-500" : "text-green-500"}`}>
+          {state.message}
+        </p>
+      )}
     </form>
   );
 }

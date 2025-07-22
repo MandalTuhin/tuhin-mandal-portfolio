@@ -13,10 +13,33 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://tuhin-mandal-portfolio.vercel.app";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Tuhin Mandal – Backend Developer",
   description:
     "Personal portfolio site showcasing projects, skills and contact details.",
+  openGraph: {
+    title: "Tuhin Mandal – Backend Developer",
+    description: "Personal portfolio site showcasing projects, skills and contact details.",
+    url: siteUrl,
+    siteName: "Tuhin Mandal's Portfolio",
+    images: [
+      {
+        url: "/og-image.png", // Path to your OG image in the /public folder
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tuhin Mandal – Backend Developer",
+    description: "Personal portfolio site showcasing projects, skills and contact details.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({

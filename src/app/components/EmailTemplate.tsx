@@ -15,11 +15,11 @@ interface EmailTemplateProps {
   message: string;
 }
 
-export const EmailTemplate: React.FC<Readonly<EmailTemplateProps>> = ({
+export const EmailTemplate = ({
   name,
   email,
   message,
-}) => (
+}: Readonly<EmailTemplateProps>) => (
   <Html>
     <Head />
     <Preview>New message from your portfolio site</Preview>

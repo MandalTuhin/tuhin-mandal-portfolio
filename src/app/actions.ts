@@ -14,6 +14,7 @@ const contactFormSchema = z.object({
 
 export type FormState = {
   message: string;
+  success: boolean;
   errors?: {
     name?: string[];
     email?: string[];
@@ -35,6 +36,7 @@ export async function sendEmail(
     return {
       errors: validatedFields.error.flatten().fieldErrors,
       message: "Validation failed. Please check your input.",
+      success: false,
     };
   }
 
@@ -42,11 +44,11 @@ export async function sendEmail(
   const { name, email, message } = validatedFields.data;
 
   try {
-    const { data, error } = await resend.emails.send({
+    const { error } = await resend.emails.send({
       from: process.env.EMAIL_SEND_FROM!,
       to: process.env.EMAIL_SEND_TO!,
       subject: "New Message from your Portfolio",
-      reply_to: email,
+      replyTo: email,
       react: EmailTemplate({ name, email, message }),
     });
 
@@ -54,16 +56,16 @@ export async function sendEmail(
       console.error("Resend error:", error);
       return {
         message: "Sorry, something went wrong. Please try again.",
-        errors: {},
+        success: false,
       };
     }
 
-    return { message: "Your message has been sent successfully!" };
+    return { message: "Your message has been sent successfully!", success: true };
   } catch (error) {
     console.error("Email sending error:", error);
     return {
       message: "Sorry, something went wrong. Please try again later.",
-      errors: {},
+      success: false,
     };
   }
 }
