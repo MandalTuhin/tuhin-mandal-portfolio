@@ -58,6 +58,7 @@ export default function RootLayout({
     >
       <body className="antialiased bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
         <Providers>{children}</Providers>
+        <Analytics />
       </body>
     </html>
   );
